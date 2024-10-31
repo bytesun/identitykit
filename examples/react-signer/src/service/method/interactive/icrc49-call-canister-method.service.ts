@@ -102,6 +102,7 @@ class Icrc49CallCanisterMethodService extends InteractiveMethodService {
     })
 
     const baseData = await super.getСomponentData(message, isAskOnUse)
+    console.log("icrc49Dto.arg", icrc49Dto.arg)
     const consentMessage = await consentMessageService.getConsentMessage(
       icrc49Dto.canisterId,
       icrc49Dto.method,
